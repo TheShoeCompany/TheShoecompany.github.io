@@ -119,6 +119,12 @@
       background: rgba(244, 63, 94, 0.1);
     }
 
+    .badge.shipping {
+      border-color: #38bdf8;
+      color: #38bdf8;
+      background: rgba(56, 189, 248, 0.1);
+    }
+
     .discount-banner {
       background: linear-gradient(90deg, #3b82f6, #8b5cf6);
       max-width: 900px;
@@ -357,6 +363,8 @@
   </div>
 
   <div class="trust-badges">
+    <div class="badge shipping">📦 3 Days Fast Delivery (India Post)</div>
+    <div class="badge shipping">🔍 Live Tracking Details Provided</div>
     <div class="badge highlight">🚀 Free Delivery Above ₹2,000</div>
     <div class="badge">🚚 COD Available</div>
     <div class="badge">💬 Instant WhatsApp Reply</div>
@@ -366,6 +374,7 @@
 
   <div class="container">
     <div class="discount-banner">
+      ⚡ <b>Fast 3-Day Delivery via India Post with Live Tracking!</b> ⚡<br>
       ✨ <b>FREE DELIVERY</b> on all orders above ₹2,000! ✨<br>
       Buy 2 pairs → code <span>COMBO200</span> for ₹200 off each.<br>
       Buy 3 pairs → code <span>COMBO300</span> for ₹300 off each.
@@ -529,7 +538,7 @@
 
     function orderProduct(title, price, radioGroupName) {
       const selectedSize = document.querySelector(`input[name="${radioGroupName}"]:checked`).value;
-      const message = `Hello! I would like to order:\n- Item: ${title}\n- Size: India ${selectedSize}\n- Price: ₹${price}`;
+      const message = `Hello! I would like to order:\n- Item: ${title}\n- Size: India ${selectedSize}\n- Price: ₹${price}\n\nPlease share payment details and India Post tracking info once dispatched.`;
       const url = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
       window.open(url, '_blank');
     }
