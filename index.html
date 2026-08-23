@@ -6,7 +6,7 @@
   <title>THE SHOE COMPANY</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800;900&display=swap" rel="stylesheet">
   <style>
     :root {
       --primary-gradient: linear-gradient(135deg, #2563eb, #ec4899);
@@ -28,36 +28,76 @@
     body {
       background-color: var(--bg-color);
       color: var(--text-main);
-      padding-bottom: 60px;
+      padding-bottom: 90px;
     }
 
     header {
       background: var(--primary-gradient);
       text-align: center;
-      padding: 40px 20px 30px;
+      padding: 35px 20px 25px;
       border-bottom-left-radius: 24px;
       border-bottom-right-radius: 24px;
       box-shadow: 0 10px 25px rgba(0,0,0,0.3);
     }
 
     header h1 {
-      font-size: 2.2rem;
-      font-weight: 800;
+      font-size: 2.3rem;
+      font-weight: 900;
       letter-spacing: 1px;
       text-transform: uppercase;
-      margin-bottom: 8px;
+      margin-bottom: 6px;
     }
 
     header p {
       font-size: 1rem;
-      opacity: 0.9;
+      opacity: 0.95;
+    }
+
+    /* MASSIVE WHATSAPP CALLOUT BANNER */
+    .whatsapp-hero-cta {
+      background: linear-gradient(135deg, #128C7E, #25D366);
+      max-width: 900px;
+      margin: 25px auto 10px;
+      padding: 24px 20px;
+      border-radius: 20px;
+      text-align: center;
+      box-shadow: 0 10px 30px rgba(37, 211, 102, 0.4);
+      border: 2px solid #86efac;
+    }
+
+    .whatsapp-hero-cta h2 {
+      font-size: 1.6rem;
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: #ffffff;
+      margin-bottom: 6px;
+    }
+
+    .whatsapp-hero-cta .number-badge {
+      display: inline-block;
+      background: #ffffff;
+      color: #064e3b;
+      font-size: 1.8rem;
+      font-weight: 900;
+      padding: 8px 24px;
+      border-radius: 50px;
+      margin: 10px 0;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+      letter-spacing: 1px;
+    }
+
+    .whatsapp-hero-cta p {
+      font-size: 0.95rem;
+      color: #f0fdf4;
+      font-weight: 600;
     }
 
     .trust-badges {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      gap: 12px;
+      gap: 10px;
       margin: 20px 15px;
     }
 
@@ -200,21 +240,42 @@
       background: var(--whatsapp-green);
       color: #ffffff;
       border: none;
-      padding: 12px;
-      border-radius: 10px;
-      font-size: 1rem;
-      font-weight: 700;
+      padding: 14px;
+      border-radius: 12px;
+      font-size: 1.05rem;
+      font-weight: 800;
       cursor: pointer;
       display: flex;
       align-items: center;
       justify-content: center;
       gap: 8px;
       text-decoration: none;
-      transition: opacity 0.2s;
+      box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3);
+      transition: transform 0.1s;
     }
 
-    .order-btn:hover {
-      opacity: 0.9;
+    .order-btn:active {
+      transform: scale(0.98);
+    }
+
+    /* Floating WhatsApp Button on bottom */
+    .floating-whatsapp {
+      position: fixed;
+      bottom: 16px;
+      right: 16px;
+      background: var(--whatsapp-green);
+      color: white;
+      padding: 12px 20px;
+      border-radius: 50px;
+      font-weight: 800;
+      font-size: 0.95rem;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.4);
+      text-decoration: none;
+      z-index: 999;
+      border: 2px solid white;
     }
 
     .modal-overlay {
@@ -278,13 +339,24 @@
 
   <header>
     <h1>THE SHOE COMPANY</h1>
-    <p>Premium Footwear Collection</p>
+    <p>Direct Reseller • 100% Verified Quality</p>
   </header>
+
+  <div class="container">
+    <!-- MASSIVE WHATSAPP DIRECT BANNER -->
+    <div class="whatsapp-hero-cta">
+      <h2>🔥 DIRECT WHATSAPP ORDERS 🔥</h2>
+      <a href="https://wa.me/918072771385" target="_blank" class="number-badge" style="text-decoration: none;">
+        📲 +91 80727 71385
+      </a>
+      <p>Tap any shoe below to pick your size and order directly on WhatsApp!</p>
+    </div>
+  </div>
 
   <div class="trust-badges">
     <div class="badge">🚚 COD Available</div>
-    <div class="badge">💬 WhatsApp Direct</div>
-    <div class="badge">📸 Real Photos</div>
+    <div class="badge">💬 Instant WhatsApp Reply</div>
+    <div class="badge">📸 100% Real Photos</div>
     <div class="badge">🎁 Combo Discounts</div>
   </div>
 
@@ -319,7 +391,7 @@
           </div>
 
           <button class="order-btn" onclick="orderProduct('Black Suede Sneaker', '1500', 'size-p1')">
-            Order on WhatsApp
+            💬 Order on WhatsApp
           </button>
         </div>
       </div>
@@ -347,7 +419,7 @@
           </div>
 
           <button class="order-btn" onclick="orderProduct('Green Suede Sneaker', '1500', 'size-p2')">
-            Order on WhatsApp
+            💬 Order on WhatsApp
           </button>
         </div>
       </div>
@@ -375,7 +447,7 @@
           </div>
 
           <button class="order-btn" onclick="orderProduct('Printed Sole Sneaker', '1500', 'size-p3')">
-            Order on WhatsApp
+            💬 Order on WhatsApp
           </button>
         </div>
       </div>
@@ -403,7 +475,7 @@
           </div>
 
           <button class="order-btn" onclick="orderProduct('Special Edition Design', '1500', 'size-p4')">
-            Order on WhatsApp
+            💬 Order on WhatsApp
           </button>
         </div>
       </div>
@@ -411,6 +483,12 @@
     </div>
   </div>
 
+  <!-- Floating Sticky WhatsApp Button -->
+  <a href="https://wa.me/918072771385?text=Hello!%20I%20have%20a%20question%20about%20your%20shoes." class="floating-whatsapp" target="_blank">
+    💬 Chat: 8072771385
+  </a>
+
+  <!-- Size Guide Modal -->
   <div class="modal-overlay" id="sizeGuideModal" onclick="closeSizeGuide(event)">
     <div class="modal-box" onclick="event.stopPropagation()">
       <h3>Size Guide (India / UK)</h3>
