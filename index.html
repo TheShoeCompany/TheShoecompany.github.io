@@ -31,7 +31,6 @@
       padding-bottom: 60px;
     }
 
-    /* Hero Banner */
     header {
       background: var(--primary-gradient);
       text-align: center;
@@ -54,7 +53,6 @@
       opacity: 0.9;
     }
 
-    /* Trust Badges */
     .trust-badges {
       display: flex;
       flex-wrap: wrap;
@@ -76,7 +74,6 @@
       color: var(--accent);
     }
 
-    /* Combo Discount Banner */
     .discount-banner {
       background: linear-gradient(90deg, #3b82f6, #8b5cf6);
       max-width: 900px;
@@ -98,7 +95,6 @@
       margin: 0 4px;
     }
 
-    /* Product Grid */
     .container {
       max-width: 1000px;
       margin: 0 auto;
@@ -123,9 +119,9 @@
 
     .product-img {
       width: 100%;
-      height: 260px;
+      height: 280px;
       object-fit: cover;
-      background: #334155;
+      background: #0f172a;
     }
 
     .product-details {
@@ -221,7 +217,6 @@
       opacity: 0.9;
     }
 
-    /* Modal for Size Guide */
     .modal-overlay {
       position: fixed;
       top: 0;
@@ -243,7 +238,6 @@
       max-width: 400px;
       width: 100%;
       border: 1px solid #475569;
-      position: relative;
     }
 
     .modal-box h3 {
@@ -304,9 +298,9 @@
       
       <!-- Product 1 -->
       <div class="product-card">
-        <img class="product-img" src="https://images.unsplash.com/photo-1549298916-b41d501d3772?auto=format&fit=crop&q=80&w=600" alt="Black Suede High-Top">
+        <img class="product-img" src="black.jpg" alt="Black Suede Sneaker">
         <div class="product-details">
-          <div class="product-title">Black Suede High-Top</div>
+          <div class="product-title">Black Suede Sneaker</div>
           <div class="product-price">₹1,500</div>
           
           <div class="size-selection-header">
@@ -324,7 +318,7 @@
             <input type="radio" id="p1-12" name="size-p1" value="12"><label for="p1-12">12</label>
           </div>
 
-          <button class="order-btn" onclick="orderProduct('Black Suede High-Top', '1500', 'size-p1')">
+          <button class="order-btn" onclick="orderProduct('Black Suede Sneaker', '1500', 'size-p1')">
             Order on WhatsApp
           </button>
         </div>
@@ -332,7 +326,7 @@
 
       <!-- Product 2 -->
       <div class="product-card">
-        <img class="product-img" src="https://images.unsplash.com/photo-1607522370275-f14206abe5d3?auto=format&fit=crop&q=80&w=600" alt="Green Suede Sneaker">
+        <img class="product-img" src="green.jpg" alt="Green Suede Sneaker">
         <div class="product-details">
           <div class="product-title">Green Suede Sneaker</div>
           <div class="product-price">₹1,500</div>
@@ -360,9 +354,9 @@
 
       <!-- Product 3 -->
       <div class="product-card">
-        <img class="product-img" src="https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?auto=format&fit=crop&q=80&w=600" alt="Printed Sole Design">
+        <img class="product-img" src="sole.jpg" alt="Printed Sole Design">
         <div class="product-details">
-          <div class="product-title">Printed Sole Design</div>
+          <div class="product-title">Printed Sole Sneaker</div>
           <div class="product-price">₹1,500</div>
           
           <div class="size-selection-header">
@@ -380,7 +374,7 @@
             <input type="radio" id="p3-12" name="size-p3" value="12"><label for="p3-12">12</label>
           </div>
 
-          <button class="order-btn" onclick="orderProduct('Printed Sole Design', '1500', 'size-p3')">
+          <button class="order-btn" onclick="orderProduct('Printed Sole Sneaker', '1500', 'size-p3')">
             Order on WhatsApp
           </button>
         </div>
@@ -388,9 +382,9 @@
 
       <!-- Product 4 -->
       <div class="product-card">
-        <img class="product-img" src="https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?auto=format&fit=crop&q=80&w=600" alt="Design 4 Sneaker">
+        <img class="product-img" src="box.jpg" alt="Design 4 (Packaging Box)">
         <div class="product-details">
-          <div class="product-title">Design 4</div>
+          <div class="product-title">Special Edition Design</div>
           <div class="product-price">₹1,500</div>
           
           <div class="size-selection-header">
@@ -408,7 +402,7 @@
             <input type="radio" id="p4-12" name="size-p4" value="12"><label for="p4-12">12</label>
           </div>
 
-          <button class="order-btn" onclick="orderProduct('Design 4', '1500', 'size-p4')">
+          <button class="order-btn" onclick="orderProduct('Special Edition Design', '1500', 'size-p4')">
             Order on WhatsApp
           </button>
         </div>
@@ -417,7 +411,6 @@
     </div>
   </div>
 
-  <!-- Size Guide Modal -->
   <div class="modal-overlay" id="sizeGuideModal" onclick="closeSizeGuide(event)">
     <div class="modal-box" onclick="event.stopPropagation()">
       <h3>Size Guide (India / UK)</h3>
@@ -443,7 +436,6 @@
   </div>
 
   <script>
-    // Placeholder WhatsApp number
     const WHATSAPP_NUMBER = "911234567890";
 
     function openSizeGuide() {
