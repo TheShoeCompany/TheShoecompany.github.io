@@ -18,6 +18,7 @@
       --accent: #38bdf8;
       --whatsapp-green: #25D366;
       --border-color: #334155;
+      --warning: #f59e0b;
     }
 
     * {
@@ -33,7 +34,6 @@
       padding-bottom: 90px;
     }
 
-    /* Top Announcement Bar */
     .top-bar {
       background: #0284c7;
       color: #ffffff;
@@ -44,7 +44,6 @@
       letter-spacing: 0.5px;
     }
 
-    /* Header */
     header {
       background: var(--primary-gradient);
       text-align: center;
@@ -85,7 +84,7 @@
       background: var(--card-bg);
       border: 1px solid var(--border-color);
       border-radius: 16px;
-      max-width: 900px;
+      max-width: 1000px;
       margin: 20px auto 10px;
       padding: 16px 20px;
       display: flex;
@@ -123,14 +122,20 @@
       color: var(--text-muted);
     }
 
+    .support-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
     .support-btn {
       background: var(--whatsapp-green);
       color: #ffffff;
-      padding: 8px 18px;
+      padding: 8px 14px;
       border-radius: 8px;
       text-decoration: none;
       font-weight: 700;
-      font-size: 0.85rem;
+      font-size: 0.82rem;
       display: inline-flex;
       align-items: center;
       gap: 6px;
@@ -171,7 +176,7 @@
 
     .discount-banner {
       background: linear-gradient(90deg, #3b82f6, #8b5cf6);
-      max-width: 900px;
+      max-width: 1000px;
       margin: 0 auto 25px;
       padding: 14px 20px;
       border-radius: 12px;
@@ -214,7 +219,7 @@
 
     .product-img {
       width: 100%;
-      height: 280px;
+      height: 300px;
       object-fit: cover;
       background: #0f172a;
     }
@@ -313,14 +318,46 @@
       transform: scale(0.98);
     }
 
-    /* Trust & Policies Footer Section */
+    /* Terms and Policies Box */
+    .terms-box {
+      background: rgba(245, 158, 11, 0.08);
+      border: 1px solid var(--warning);
+      border-radius: 16px;
+      padding: 20px;
+      margin: 30px auto;
+      max-width: 1000px;
+    }
+
+    .terms-box h4 {
+      color: var(--warning);
+      font-size: 1rem;
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .terms-list {
+      list-style-type: none;
+      font-size: 0.85rem;
+      color: #e2e8f0;
+      line-height: 1.6;
+    }
+
+    .terms-list li {
+      margin-bottom: 8px;
+      display: flex;
+      align-items: flex-start;
+      gap: 8px;
+    }
+
     .store-policies {
       background: var(--surface-bg);
       border: 1px solid var(--border-color);
       border-radius: 16px;
       padding: 24px;
-      margin: 40px auto 20px;
-      max-width: 900px;
+      margin: 20px auto;
+      max-width: 1000px;
     }
 
     .policy-grid {
@@ -357,7 +394,6 @@
       color: #ffffff;
     }
 
-    /* Floating WhatsApp Button */
     .floating-whatsapp {
       position: fixed;
       bottom: 16px;
@@ -437,7 +473,7 @@
 <body>
 
   <div class="top-bar">
-    ⚡ Official Direct Outlet • 100% Genuine Quality Footwear • Fast India Post Dispatch ⚡
+    ⚡ Official Direct Outlet • 100% Genuine Suede Collection • 3-Day India Post Express Dispatch ⚡
   </div>
 
   <header>
@@ -447,18 +483,23 @@
   </header>
 
   <div class="container">
-    <!-- Dedicated Customer Care Card -->
+    <!-- Customer Support with Primary & Alternate Numbers -->
     <div class="support-card">
       <div class="support-info">
         <div class="support-icon">🎧</div>
         <div class="support-text">
-          <h4>Customer Care & Order Assistance</h4>
-          <p>Available 10:00 AM – 9:00 PM • Direct Helpdesk</p>
+          <h4>Customer Care & Order Desks</h4>
+          <p>Available 10:00 AM – 9:00 PM • Instant WhatsApp Assistance</p>
         </div>
       </div>
-      <a href="https://wa.me/918072771385?text=Hello%20Customer%20Care!%20I%20need%20help%20with%20my%20order." target="_blank" class="support-btn">
-        💬 Helpdesk: +91 80727 71385
-      </a>
+      <div class="support-buttons">
+        <a href="https://wa.me/918072771385?text=Hello%20Desk%201!%20I%20need%20help%20with%20my%20order." target="_blank" class="support-btn">
+          💬 Primary: 8072771385
+        </a>
+        <a href="https://wa.me/917338036269?text=Hello%20Desk%202!%20I%20need%20help%20with%20my%20order." target="_blank" class="support-btn">
+          💬 Support: 7338036269
+        </a>
+      </div>
     </div>
   </div>
 
@@ -466,12 +507,13 @@
     <div class="badge shipping">📦 3 Days Fast Delivery (India Post)</div>
     <div class="badge shipping">🔍 Live Tracking Details Provided</div>
     <div class="badge highlight">🚀 Free Delivery Above ₹2,000</div>
-    <div class="badge">🚚 COD Available</div>
+    <div class="badge">💳 100% Secure Online Payment</div>
     <div class="badge">📸 100% Original Stock Photos</div>
   </div>
 
   <div class="container">
     <div class="discount-banner">
+      ⚡ <b>Fast 3-Day Delivery via India Post with Tracking!</b> ⚡<br>
       ✨ <b>FREE DELIVERY</b> on all orders above ₹2,000! ✨<br>
       Buy 2 pairs → code <span>COMBO200</span> for ₹200 off each.<br>
       Buy 3 pairs → code <span>COMBO300</span> for ₹300 off each.
@@ -479,11 +521,11 @@
 
     <div class="product-grid">
       
-      <!-- Product 1 -->
+      <!-- Product 1: Sky Blue Suede -->
       <div class="product-card">
-        <img class="product-img" src="black.jpeg" alt="Black Suede Sneaker">
+        <img class="product-img" src="sky_blue.jpeg" alt="Sky Blue Suede Sneaker">
         <div class="product-details">
-          <div class="product-title">Black Suede Sneaker</div>
+          <div class="product-title">Sky Blue Suede Sneaker</div>
           <div class="product-price">₹1,500</div>
           
           <div class="size-selection-header">
@@ -501,17 +543,17 @@
             <input type="radio" id="p1-12" name="size-p1" value="12"><label for="p1-12">12</label>
           </div>
 
-          <button class="order-btn" onclick="orderProduct('Black Suede Sneaker', '1500', 'size-p1')">
+          <button class="order-btn" onclick="orderProduct('Sky Blue Suede Sneaker', '1500', 'size-p1')">
             💬 Buy Now via WhatsApp
           </button>
         </div>
       </div>
 
-      <!-- Product 2 -->
+      <!-- Product 2: Mint Green / Sage Suede -->
       <div class="product-card">
-        <img class="product-img" src="green.jpeg" alt="Green Suede Sneaker">
+        <img class="product-img" src="mint_green.jpeg" alt="Mint Green Suede Sneaker">
         <div class="product-details">
-          <div class="product-title">Green Suede Sneaker</div>
+          <div class="product-title">Mint Sage Suede Sneaker</div>
           <div class="product-price">₹1,500</div>
           
           <div class="size-selection-header">
@@ -529,17 +571,17 @@
             <input type="radio" id="p2-12" name="size-p2" value="12"><label for="p2-12">12</label>
           </div>
 
-          <button class="order-btn" onclick="orderProduct('Green Suede Sneaker', '1500', 'size-p2')">
+          <button class="order-btn" onclick="orderProduct('Mint Sage Suede Sneaker', '1500', 'size-p2')">
             💬 Buy Now via WhatsApp
           </button>
         </div>
       </div>
 
-      <!-- Product 3 -->
+      <!-- Product 3: Forest Green Suede -->
       <div class="product-card">
-        <img class="product-img" src="sole.jpeg" alt="Printed Sole Sneaker">
+        <img class="product-img" src="forest_green.jpeg" alt="Forest Green Suede Sneaker">
         <div class="product-details">
-          <div class="product-title">Printed Sole Sneaker</div>
+          <div class="product-title">Forest Green Suede Sneaker</div>
           <div class="product-price">₹1,500</div>
           
           <div class="size-selection-header">
@@ -557,17 +599,17 @@
             <input type="radio" id="p3-12" name="size-p3" value="12"><label for="p3-12">12</label>
           </div>
 
-          <button class="order-btn" onclick="orderProduct('Printed Sole Sneaker', '1500', 'size-p3')">
+          <button class="order-btn" onclick="orderProduct('Forest Green Suede Sneaker', '1500', 'size-p3')">
             💬 Buy Now via WhatsApp
           </button>
         </div>
       </div>
 
-      <!-- Product 4 -->
+      <!-- Product 4: Art Graphic Sole -->
       <div class="product-card">
-        <img class="product-img" src="box.jpeg" alt="Special Edition Box">
+        <img class="product-img" src="art_sole.jpeg" alt="Graphic Art Sole Edition">
         <div class="product-details">
-          <div class="product-title">Special Edition Design</div>
+          <div class="product-title">Graphic Art Sole Edition</div>
           <div class="product-price">₹1,500</div>
           
           <div class="size-selection-header">
@@ -585,12 +627,23 @@
             <input type="radio" id="p4-12" name="size-p4" value="12"><label for="p4-12">12</label>
           </div>
 
-          <button class="order-btn" onclick="orderProduct('Special Edition Design', '1500', 'size-p4')">
+          <button class="order-btn" onclick="orderProduct('Graphic Art Sole Edition', '1500', 'size-p4')">
             💬 Buy Now via WhatsApp
           </button>
         </div>
       </div>
 
+    </div>
+
+    <!-- Mandatory Return & Refund Policy Box -->
+    <div class="terms-box">
+      <h4>⚠️ Return & Refund Policy (Please Read Before Ordering)</h4>
+      <ul class="terms-list">
+        <li>📹 <b>Mandatory Unboxing Video:</b> A 360-degree, unedited unboxing video from sealed package to opening is strictly mandatory to claim any damage on arrival. Without valid video proof, return/refund requests will not be entertained.</li>
+        <li>⏱️ <b>48-Hour Claim Window:</b> Any physical damages or defects must be reported to our WhatsApp customer care within 48 hours of delivery receipt.</li>
+        <li>🔄 <b>Damaged Products Only:</b> We accept returns exclusively for products damaged in transit or bearing manufacturing defects.</li>
+        <li>💳 <b>Refund Timeline:</b> Once the returned item is received and verified, refunds are credited within <b>5 to 7 business days</b> as per standard banking protocol.</li>
+      </ul>
     </div>
 
     <!-- Official Store Details & Trust Policies -->
@@ -601,12 +654,12 @@
           <p>Dispatched via <b>India Post Express</b> with direct live tracking SMS provided upon dispatch.</p>
         </div>
         <div class="policy-item">
-          <h5>🔒 Secure Ordering</h5>
-          <p>Direct WhatsApp interaction with our representative. Cash on Delivery (COD) available.</p>
+          <h5>🔒 Secure Online Payments</h5>
+          <p>100% verified payments via UPI (GPay, PhonePe, Paytm). Direct WhatsApp interaction.</p>
         </div>
         <div class="policy-item">
-          <h5>📞 Helpdesk</h5>
-          <p>Customer Support: <b>+91 80727 71385</b><br>Mon – Sun: 10:00 AM to 9:00 PM</p>
+          <h5>📞 Customer Support</h5>
+          <p>Primary: <b>+91 80727 71385</b><br>Support Desk: <b>+91 73380 36269</b><br>Mon – Sun: 10:00 AM to 9:00 PM</p>
         </div>
       </div>
       <div class="official-footer">
@@ -617,7 +670,7 @@
   </div>
 
   <a href="https://wa.me/918072771385?text=Hello!%20I%20have%20a%20query%20regarding%20products/orders." class="floating-whatsapp" target="_blank">
-    🎧 Customer Care: 8072771385
+    🎧 Support: 8072771385
   </a>
 
   <div class="modal-overlay" id="sizeGuideModal" onclick="closeSizeGuide(event)">
@@ -645,7 +698,7 @@
   </div>
 
   <script>
-    const WHATSAPP_NUMBER = "918072771385";
+    const PRIMARY_WHATSAPP = "918072771385";
 
     function openSizeGuide() {
       document.getElementById('sizeGuideModal').style.display = 'flex';
@@ -658,7 +711,7 @@
     function orderProduct(title, price, radioGroupName) {
       const selectedSize = document.querySelector(`input[name="${radioGroupName}"]:checked`).value;
       const message = `Hello! I would like to order:\n- Item: ${title}\n- Size: India ${selectedSize}\n- Price: ₹${price}\n\nPlease share payment details and India Post tracking info once dispatched.`;
-      const url = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
+      const url = `https://wa.me/${PRIMARY_WHATSAPP}?text=${encodeURIComponent(message)}`;
       window.open(url, '_blank');
     }
   </script>
