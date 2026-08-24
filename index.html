@@ -200,6 +200,15 @@
       padding: 0 16px;
     }
 
+    .section-title {
+      font-size: 1.3rem;
+      font-weight: 800;
+      margin: 30px 0 16px;
+      color: var(--accent);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
     .product-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -322,7 +331,7 @@
       border: 1px solid var(--warning);
       border-radius: 16px;
       padding: 20px;
-      margin: 30px auto;
+      margin: 35px auto 20px;
       max-width: 1000px;
     }
 
@@ -471,7 +480,7 @@
 <body>
 
   <div class="top-bar">
-    ⚡ Official Direct Outlet • 100% Genuine Suede Collection • 3-Day India Post Express Dispatch ⚡
+    ⚡ Official Direct Outlet • 100% Genuine Footwear • 3-Day India Post Express Dispatch ⚡
   </div>
 
   <header>
@@ -516,13 +525,15 @@
       Buy 3 pairs → code <span>COMBO300</span> for ₹300 off each.
     </div>
 
+    <!-- Section 1: Original In-Stock Products -->
+    <div class="section-title">Classic Collection</div>
     <div class="product-grid">
       
-      <!-- Product 1: Sky Blue Suede -->
+      <!-- Product 1 -->
       <div class="product-card">
-        <img class="product-img" src="sky_blue.jpeg" alt="Sky Blue Suede Sneaker">
+        <img class="product-img" src="black.jpeg" alt="Black Suede Sneaker">
         <div class="product-details">
-          <div class="product-title">Sky Blue Suede Sneaker</div>
+          <div class="product-title">Black Suede Sneaker</div>
           <div class="product-price">₹1,500</div>
           
           <div class="size-selection-header">
@@ -540,17 +551,17 @@
             <input type="radio" id="p1-12" name="size-p1" value="12"><label for="p1-12">12</label>
           </div>
 
-          <button class="order-btn" onclick="orderProduct('Sky Blue Suede Sneaker', '1500', 'size-p1')">
+          <button class="order-btn" onclick="orderProduct('Black Suede Sneaker', '1500', 'size-p1')">
             💬 Buy Now via WhatsApp
           </button>
         </div>
       </div>
 
-      <!-- Product 2: Mint Green / Sage Suede -->
+      <!-- Product 2 -->
       <div class="product-card">
-        <img class="product-img" src="mint_green.jpeg" alt="Mint Green Suede Sneaker">
+        <img class="product-img" src="green.jpeg" alt="Green Suede Sneaker">
         <div class="product-details">
-          <div class="product-title">Mint Sage Suede Sneaker</div>
+          <div class="product-title">Classic Green Suede Sneaker</div>
           <div class="product-price">₹1,500</div>
           
           <div class="size-selection-header">
@@ -568,17 +579,17 @@
             <input type="radio" id="p2-12" name="size-p2" value="12"><label for="p2-12">12</label>
           </div>
 
-          <button class="order-btn" onclick="orderProduct('Mint Sage Suede Sneaker', '1500', 'size-p2')">
+          <button class="order-btn" onclick="orderProduct('Classic Green Suede Sneaker', '1500', 'size-p2')">
             💬 Buy Now via WhatsApp
           </button>
         </div>
       </div>
 
-      <!-- Product 3: Forest Green Suede -->
+      <!-- Product 3 -->
       <div class="product-card">
-        <img class="product-img" src="forest_green.jpeg" alt="Forest Green Suede Sneaker">
+        <img class="product-img" src="sole.jpeg" alt="Printed Sole Sneaker">
         <div class="product-details">
-          <div class="product-title">Forest Green Suede Sneaker</div>
+          <div class="product-title">Printed Sole Sneaker</div>
           <div class="product-price">₹1,500</div>
           
           <div class="size-selection-header">
@@ -596,17 +607,17 @@
             <input type="radio" id="p3-12" name="size-p3" value="12"><label for="p3-12">12</label>
           </div>
 
-          <button class="order-btn" onclick="orderProduct('Forest Green Suede Sneaker', '1500', 'size-p3')">
+          <button class="order-btn" onclick="orderProduct('Printed Sole Sneaker', '1500', 'size-p3')">
             💬 Buy Now via WhatsApp
           </button>
         </div>
       </div>
 
-      <!-- Product 4: Art Graphic Sole -->
+      <!-- Product 4 -->
       <div class="product-card">
-        <img class="product-img" src="art_sole.jpeg" alt="Graphic Art Sole Edition">
+        <img class="product-img" src="box.jpeg" alt="Special Edition Box">
         <div class="product-details">
-          <div class="product-title">Graphic Art Sole Edition</div>
+          <div class="product-title">Special Edition Box Design</div>
           <div class="product-price">₹1,500</div>
           
           <div class="size-selection-header">
@@ -624,7 +635,7 @@
             <input type="radio" id="p4-12" name="size-p4" value="12"><label for="p4-12">12</label>
           </div>
 
-          <button class="order-btn" onclick="orderProduct('Graphic Art Sole Edition', '1500', 'size-p4')">
+          <button class="order-btn" onclick="orderProduct('Special Edition Box Design', '1500', 'size-p4')">
             💬 Buy Now via WhatsApp
           </button>
         </div>
@@ -632,6 +643,125 @@
 
     </div>
 
+    <!-- Section 2: New Suede & Graphic Editions -->
+    <div class="section-title">New Suede Editions</div>
+    <div class="product-grid">
+      
+      <!-- Product 5: Sky Blue Suede -->
+      <div class="product-card">
+        <img class="product-img" src="sky_blue.jpeg" alt="Sky Blue Suede Sneaker">
+        <div class="product-details">
+          <div class="product-title">Sky Blue Suede Sneaker</div>
+          <div class="product-price">₹1,500</div>
+          
+          <div class="size-selection-header">
+            <span class="size-label">Select India Size:</span>
+            <button class="size-guide-btn" onclick="openSizeGuide()">SIZE GUIDE</button>
+          </div>
+          
+          <div class="size-picker">
+            <input type="radio" id="p5-6" name="size-p5" value="6" checked><label for="p5-6">6</label>
+            <input type="radio" id="p5-7" name="size-p5" value="7"><label for="p5-7">7</label>
+            <input type="radio" id="p5-8" name="size-p5" value="8"><label for="p5-8">8</label>
+            <input type="radio" id="p5-9" name="size-p5" value="9"><label for="p5-9">9</label>
+            <input type="radio" id="p5-10" name="size-p5" value="10"><label for="p5-10">10</label>
+            <input type="radio" id="p5-11" name="size-p5" value="11"><label for="p5-11">11</label>
+            <input type="radio" id="p5-12" name="size-p5" value="12"><label for="p5-12">12</label>
+          </div>
+
+          <button class="order-btn" onclick="orderProduct('Sky Blue Suede Sneaker', '1500', 'size-p5')">
+            💬 Buy Now via WhatsApp
+          </button>
+        </div>
+      </div>
+
+      <!-- Product 6: Mint Green / Sage Suede -->
+      <div class="product-card">
+        <img class="product-img" src="mint_green.jpeg" alt="Mint Green Suede Sneaker">
+        <div class="product-details">
+          <div class="product-title">Mint Sage Suede Sneaker</div>
+          <div class="product-price">₹1,500</div>
+          
+          <div class="size-selection-header">
+            <span class="size-label">Select India Size:</span>
+            <button class="size-guide-btn" onclick="openSizeGuide()">SIZE GUIDE</button>
+          </div>
+          
+          <div class="size-picker">
+            <input type="radio" id="p6-6" name="size-p6" value="6" checked><label for="p6-6">6</label>
+            <input type="radio" id="p6-7" name="size-p6" value="7"><label for="p6-7">7</label>
+            <input type="radio" id="p6-8" name="size-p6" value="8"><label for="p6-8">8</label>
+            <input type="radio" id="p6-9" name="size-p6" value="9"><label for="p6-9">9</label>
+            <input type="radio" id="p6-10" name="size-p6" value="10"><label for="p6-10">10</label>
+            <input type="radio" id="p6-11" name="size-p6" value="11"><label for="p6-11">11</label>
+            <input type="radio" id="p6-12" name="size-p6" value="12"><label for="p6-12">12</label>
+          </div>
+
+          <button class="order-btn" onclick="orderProduct('Mint Sage Suede Sneaker', '1500', 'size-p6')">
+            💬 Buy Now via WhatsApp
+          </button>
+        </div>
+      </div>
+
+      <!-- Product 7: Forest Green Suede -->
+      <div class="product-card">
+        <img class="product-img" src="forest_green.jpeg" alt="Forest Green Suede Sneaker">
+        <div class="product-details">
+          <div class="product-title">Forest Green Suede Sneaker</div>
+          <div class="product-price">₹1,500</div>
+          
+          <div class="size-selection-header">
+            <span class="size-label">Select India Size:</span>
+            <button class="size-guide-btn" onclick="openSizeGuide()">SIZE GUIDE</button>
+          </div>
+          
+          <div class="size-picker">
+            <input type="radio" id="p7-6" name="size-p7" value="6" checked><label for="p7-6">6</label>
+            <input type="radio" id="p7-7" name="size-p7" value="7"><label for="p7-7">7</label>
+            <input type="radio" id="p7-8" name="size-p7" value="8"><label for="p7-8">8</label>
+            <input type="radio" id="p7-9" name="size-p7" value="9"><label for="p7-9">9</label>
+            <input type="radio" id="p7-10" name="size-p7" value="10"><label for="p7-10">10</label>
+            <input type="radio" id="p7-11" name="size-p7" value="11"><label for="p7-11">11</label>
+            <input type="radio" id="p7-12" name="size-p7" value="12"><label for="p7-12">12</label>
+          </div>
+
+          <button class="order-btn" onclick="orderProduct('Forest Green Suede Sneaker', '1500', 'size-p7')">
+            💬 Buy Now via WhatsApp
+          </button>
+        </div>
+      </div>
+
+      <!-- Product 8: Art Graphic Sole -->
+      <div class="product-card">
+        <img class="product-img" src="art_sole.jpeg" alt="Graphic Art Sole Edition">
+        <div class="product-details">
+          <div class="product-title">Graphic Art Sole Edition</div>
+          <div class="product-price">₹1,500</div>
+          
+          <div class="size-selection-header">
+            <span class="size-label">Select India Size:</span>
+            <button class="size-guide-btn" onclick="openSizeGuide()">SIZE GUIDE</button>
+          </div>
+          
+          <div class="size-picker">
+            <input type="radio" id="p8-6" name="size-p8" value="6" checked><label for="p8-6">6</label>
+            <input type="radio" id="p8-7" name="size-p8" value="7"><label for="p8-7">7</label>
+            <input type="radio" id="p8-8" name="size-p8" value="8"><label for="p8-8">8</label>
+            <input type="radio" id="p8-9" name="size-p8" value="9"><label for="p8-9">9</label>
+            <input type="radio" id="p8-10" name="size-p8" value="10"><label for="p8-10">10</label>
+            <input type="radio" id="p8-11" name="size-p8" value="11"><label for="p8-11">11</label>
+            <input type="radio" id="p8-12" name="size-p8" value="12"><label for="p8-12">12</label>
+          </div>
+
+          <button class="order-btn" onclick="orderProduct('Graphic Art Sole Edition', '1500', 'size-p8')">
+            💬 Buy Now via WhatsApp
+          </button>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Return and Refund Policy Notice -->
     <div class="terms-box">
       <h4>⚠️ Return & Refund Policy (Please Read Before Ordering)</h4>
       <ul class="terms-list">
